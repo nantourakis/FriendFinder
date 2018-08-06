@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "A dating app using express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cezarcarvalhaes/FriendFinder.git"
+  },
+  "keywords": [
+    "express.js",
+    "javascript",
+    "dating"
+  ],
+  "author": "Cezar Carvalhaes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cezarcarvalhaes/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/cezarcarvalhaes/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}

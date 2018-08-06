@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/javascript/logic.js"></script>
+    <title>FriendFinder!</title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <header>
+            <center><h1>Best Friend Finder!</h1></center>
+        </header>
+        <br>
+        <div class="main">
+            <h2>Please take our survey!</h2>
+            <br>
+            <form>
+                <fieldset>
+                    <label for="nameField">Name</label>
+                    <input placeholder="Bill Gates" id="nameField" type="text">
+                    <label for="photo-link">Photo (url link)</label>
+                    <input placeholder="https://en.wikipedia.org/wiki/microsoft" id="photo-link" type="text">
+
+                    <h3>Rate each statement on a scale of 1 (Strongly Disagree) to 5 (Strongly Agree).</h3>
+
+                    <label for="q1">Having an education is important.</label>
+                    <select id="q1">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q2">Peanut Butter taste nasty.</label>
+                    <select id="q2">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q3">Pineapples go well on pizza.</label>
+                    <select id="q3">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q4">Brushing your teeth is important.</label>
+                    <select id="q4">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q5">Squirtle is the best starter Pokemon to choose.</label>
+                    <select id="q5">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q6">I love roller coasters!</label>
+                    <select id="q6">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q7">Baseball is fun to watch.</label>
+                    <select id="q7">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q8">I prefer staying in with friends rather than going clubbing.</label>
+                    <select id="q8">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <label for="q9">I enjoy going to the beach.</label>
+                    <select id="q9">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (Neither Agree Nor Disagree)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    
+                    <label for="q10">Becoming a developer is super cool!</label>
+                    <select id="q10">
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                </fieldset>
+            </form>
+            <button class="button-primary" id="modal-btn">Submit</button>
+
+            <a class="button" href="/">Home</a>
+        </div>
+    </div>
+    <footer>
+            <p>
+                <a href="/api/friends">API Friends List</a>  |  
+                <a href="https://github.com/nantourakis/FriendFinder">GitHub Repo</a> 
+            </p>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>We found your match!</h4>
+            <div id = 'match-name'></div>
+            <div id = 'match-pic'></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
